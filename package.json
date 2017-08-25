@@ -18,7 +18,6 @@
         "webpack-dev-server": "^2.7.1"
     },
     "scripts": {
-        "scss": "node-sass --source-map true --output-style compressed -o src/css vendor/sass/main.scss",
         "api": "json-server --watch db.json --port 4000",
         "start": "npm run scss && react-scripts start",
         "build": "react-scripts build",
