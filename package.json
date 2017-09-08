@@ -20,7 +20,7 @@
         "webpack-dev-server": "^2.7.1"
     },
     "scripts": {
-        "api": "json-server --watch db.json --port 4000",
+        "api": "json-server --watch ./src/db.json --port 4000",
         "start": "npm run scss && react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test --env=jsdom",
