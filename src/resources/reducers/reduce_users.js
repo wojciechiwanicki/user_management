@@ -1,4 +1,9 @@
 export default function(){
+    /*
+    i've tried to make api server, which provides with data,
+    this is on branch server (i couldnt make it work right),
+    but it sends proper data and logs it in console
+    */
     return[
         {
                         "id": 1,

@@ -5,6 +5,7 @@ import {deleteItem} from '../actions/delete_item';
 
 
 class UserDetails extends Component {
+
     // creating list of equipment items !!! functionality of removing item is not working yet
     createListItems() {
         return this.props.user.equipment.map((equipment) => {
