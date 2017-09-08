@@ -1,8 +1,6 @@
 import React from 'react';
 import UsersList from './containers/users_list.js';
 import UserDetail from './containers/user_details.js';
-import GithubDetails from './containers/github_details.js';
-
 require('./css/main.css')
 
 const App = () => (
@@ -37,7 +35,6 @@ const App = () => (
 
             </div>
             <UserDetail/>
-            <GithubDetails/>
         </div>
     </div>
 )

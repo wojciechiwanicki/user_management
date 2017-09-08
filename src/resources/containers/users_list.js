@@ -8,7 +8,7 @@ class UsersList extends Component {
     createListUsers() {
         return this.props.users.map((user) => {
             return (
-                <div className='row' key={user.id} onClick={() => this.props.selectUser(user)}>
+                <div className='row user-row' key={user.id} onClick={() => this.props.selectUser(user)}>
                     <div className='col m4 s4 user-name'>
                         {user.name} {user.surname}</div>
                     <div className='user-id col m4 s4'>

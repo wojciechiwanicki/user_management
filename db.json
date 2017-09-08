@@ -1,40 +1,19 @@
 {
-    "data": {
-        "users": [{
-                "id": 1,
-                "name": "John",
-                "surname": "Doe",
-                "github": "john_doe",
-                "equipment": [{
-                        "brand": "sony",
-                        "model": "vaio ds23-32",
-                        "serial": "123"
-                    },
-                    {
-                        "brand": "apple",
-                        "model": "iphone 6s",
-                        "serial": "222"
-                    }
-                ]
-            },
-            {
-                "id": 2,
-                "name": "2John",
-                "surname": "2Doe",
-                "github": "2john_doe",
-                "equipment": [{
-                        "brand": "sony",
-                        "model": "vaio ds23-32",
-                        "serial": "444"
-                    },
-                    {
-                        "brand": "apple",
-                        "model": "iphone 6s",
-                        "serial": "333"
-                    }
-                ]
-            }
-
-        ]
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
     }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }
