@@ -14,7 +14,7 @@ class UserDetails extends Component {
                     <div className='col m3 s3'>{equipment.model}</div>
                     <div className='col m3 s3'>{equipment.serial}</div>
                     <div className='col m3 s3'>
-                        <button onClick={() => this.deleteItem(equipment)}>DELETE
+                        <button onClick={() => this.props.deleteItem(equipment)}>DELETE
                         </button></div>
                 </div>
 
