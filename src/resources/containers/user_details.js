@@ -11,7 +11,7 @@ class UserDetails extends Component {
         return this.props.user.equipment.map((equipment) => {
             return (
                 <div className='row' key={equipment.id}>
-                    <div className='col m3 s3'>{equipment.brand}</div>
+                    <div className='col m3 s3'>{equipment.type}</div>
                     <div className='col m3 s3'>{equipment.model}</div>
                     <div className='col m3 s3'>{equipment.serial}</div>
                     <div className='col m3 s3'>
@@ -44,9 +44,11 @@ class UserDetails extends Component {
                 </div>
 
                 <div className='user-details-equipment'>
+                    <div className='equipment-title'>Equimpent used:</div>
                     <div className='row middle-legend'>
                         <div className='col m3 s3'>
-                            Brand:</div>
+                            Type:</div>
+
                         <div className='col m3 s3'>
                             Model:</div>
                         <div className='col m3 s3'>
