@@ -1,41 +1,108 @@
-{"users": [
-    {
-                "id": 1,
-                "name": "John",
-                "surname": "Doe",
-                "github": "facebook",
-                "equipment": [{
+{
+    "users": [{
+            "id": 1,
+            "name": "John",
+            "surname": "Doe",
+            "github": "facebook",
+            "equipment": [{
                     "id": 11,
-                        "brand": "sony",
-                        "model": "vaio ds23-32",
-                        "serial": "111"
-                    },
-                    {
-                        "id": 12,
-                        "brand": "apple",
-                        "model": "iphone 6s",
-                        "serial": "222"
-                    }
-                ]
-            },
-            {
-                "id": 2,
-                "name": "Wojciech",
-                "surname": "Iwanicki",
-                "github": "wojciechiwanicki",
-                "equipment": [{
-                    "id": 22,
-                        "brand": "Asus",
-                        "model": "dh-7447",
-                        "serial": "444"
-                    },
-                    {
-                        "id": 3,
-                        "brand": "apple",
-                        "model": "iphone 5s",
-                        "serial": "333"
-                    }
-                ]
-            }
-        ]
+                    "type": "laptop",
+                    "brand": "sony",
+                    "model": "vaio ds23-32",
+                    "serial": "1154221"
+                },
+                {
+                    "id": 12,
+                    "type": "phone",
+
+                    "brand": "apple",
+                    "model": "iphone 6s",
+                    "serial": "2356652422"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Wojciech",
+            "surname": "Iwanicki",
+            "github": "wojciechiwanicki",
+            "equipment": [{
+                    "id": 13,
+                    "type": "laptop",
+
+                    "brand": "Asus",
+                    "model": "dh-7447",
+                    "serial": "44351244"
+                },
+                {
+                    "id": 14,
+                    "type": "phone",
+                    "brand": "apple",
+                    "model": "iphone 5s",
+                    "serial": "3366443243"
+                }
+            ]
+        }, {
+            "id": 3,
+            "name": "Adam",
+            "surname": "Smith",
+            "github": "adamsmith",
+            "equipment": [{
+                    "id": 15,
+                    "type": "laptop",
+
+                    "brand": "Lanovo",
+                    "model": "ah-74gf7",
+                    "serial": "5554938395"
+                },
+                {
+                    "id": 16,
+                    "type": "phone",
+                    "brand": "samsung",
+                    "model": "galaxy 4",
+                    "serial": "342950333"
+                },
+                {
+                    "id": 17,
+                    "type": "keyboard",
+                    "brand": "zetex",
+                    "model": "gtd-545",
+                    "serial": "xyze85493"
+                }
+            ]
+        }, {
+            "id": 4,
+            "name": "John",
+            "surname": "Travolta",
+            "github": "johntravolta",
+            "equipment": [{
+                    "id": 18,
+                    "type": "mouse",
+                    "brand": "logitech",
+                    "model": "tr-74447",
+                    "serial": "dgsh98372h"
+                },
+                {
+                    "id": 19,
+                    "type": "phone",
+                    "brand": "apple",
+                    "model": "iphone 5s",
+                    "serial": "4648201345"
+                },{
+                    "id": 20,
+                    "type": "mousepad",
+                    "brand": "----",
+                    "model": "----",
+                    "serial": "3345"
+                },
+                {
+                    "id": 21,
+                    "type": "laptop",
+                    "brand": "Acer",
+                    "model": "yeu-h45",
+                    "serial": "4gdh75849j"
+                }
+            ]
+        }
+    ]
 }
