@@ -10,7 +10,8 @@ class UsersList extends Component {
             return (
                 <div className='row user-row' key={user.id} onClick={() => this.props.selectUser(user)}>
                     <div className='col m4 s4 user-name'>
-                        {user.name} {user.surname}</div>
+                        {user.name}
+                        {user.surname}</div>
                     <div className='user-id col m4 s4'>
                         {user.id}</div>
                     <div className='col m4 s4'>

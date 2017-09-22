@@ -1,5 +1,5 @@
 export const selectUser = (user) => {
-    console.log('success 1');
+    console.log('successfully got users data');
     return{
         type: "SELECTED_USER",
         payload: user

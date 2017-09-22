@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {deleteItem} from '../actions/delete_item';
-
+import axios from 'axios';
 
 class UserDetails extends Component {
 
@@ -16,7 +16,8 @@ class UserDetails extends Component {
                     <div className='col m3 s3'>{equipment.serial}</div>
                     <div className='col m3 s3'>
                         <button onClick={() => this.props.deleteItem(equipment)}>DELETE
-                        </button></div>
+                        </button>
+                    </div>
                 </div>
 
             )
@@ -37,7 +38,9 @@ class UserDetails extends Component {
                         {this.props.user.id}</div>
                     <div className='col m3 s3'>
                         <a href={'https://github.com/' + this.props.user.github}>
-                        {this.props.user.github}</a>
+                            {this.props.user.github}
+                            GH</a>
+                        <button onClick={this.handleFetch}>Fetch Data</button>
                     </div>
                     <div className='col m3 s3'>
                         {this.props.user.equipment.length}</div>
@@ -61,6 +64,13 @@ class UserDetails extends Component {
             </div>
         )
     }
+    //fetched data appears only in console for now
+    handleFetch = (event) => {
+        axios.get(`https://api.github.com/users/${this.props.user.github}`).then(resp => {
+            console.log(resp);
+
+        });
+    };
 }
 function matchDispatchToProps(dispatch) {
     return bindActionCreators({
@@ -73,4 +83,4 @@ function mapStateToProps(state) {
     return {user: state.activeUser};
 };
 
-export default connect(mapStateToProps,  matchDispatchToProps)(UserDetails);
+export default connect(mapStateToProps, matchDispatchToProps)(UserDetails);
