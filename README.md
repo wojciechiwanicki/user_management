@@ -11,3 +11,6 @@ to install app we:
 
 to run api module type
 ``npm run api``
+
+Delete mutation is not working yet, only action is triggered, but this is my weekend project so I will fix this in near future.
+The same is with GH api fetch. It is fetched, but not passed to state/props., only logged in console.
